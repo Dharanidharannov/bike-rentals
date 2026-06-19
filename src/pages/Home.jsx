@@ -58,29 +58,38 @@ function Home() {
       </section>
 
       {/* Featured Bikes */}
-      <section className="featured-section">
-        <h2>🔥 Featured Bikes</h2>
-        {loading ? (
-          <div className="loading">Loading bikes...</div>
-        ) : (
-          <div className="bike-grid">
-            {featuredBikes.map((bike) => (
-              <div key={bike.id} className="bike-card">
-                <div className="bike-image">{bike.image || '🚲'}</div>
-                <h3>{bike.name}</h3>
-                <p className="bike-type">{bike.type}</p>
-                <p className="bike-price">₹{bike.price}/day</p>
-                <span className={bike.available ? 'available' : 'unavailable'}>
-                  {bike.available ? '✅ Available' : '❌ Not Available'}
-                </span>
-                <Link to={`/booking?bike=${bike.id}`} className="rent-btn">
-                  Rent Now
-                </Link>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
+     {/* Featured Bikes */}
+<section className="featured-section">
+  <h2>🔥 Featured Bikes</h2>
+
+  {loading ? (
+    <div className="loading">Loading bikes...</div>
+  ) : featuredBikes.length > 0 ? (
+    <div className="bike-grid">
+      {featuredBikes.map((bike) => (
+        <div key={bike.id} className="bike-card">
+          <div className="bike-image">{bike.image || '🚲'}</div>
+          <h3>{bike.name}</h3>
+          <p className="bike-type">{bike.type}</p>
+          <p className="bike-price">₹{bike.price}/day</p>
+
+          <span className={bike.available ? 'available' : 'unavailable'}>
+            {bike.available ? '✅ Available' : '❌ Not Available'}
+          </span>
+
+          <Link to={`/booking?bike=${bike.id}`} className="rent-btn">
+            Rent Now
+          </Link>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div className="no-bikes">
+      <h3> No Bikes Available</h3>
+      <p>Please check back later.</p>
+    </div>
+  )}
+</section>
 
       {/* Testimonials */}
       <section className="testimonials">
