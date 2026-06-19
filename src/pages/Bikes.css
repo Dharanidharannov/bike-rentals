@@ -1,0 +1,154 @@
+.bikes-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bikes-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.bike-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.bike-categories a {
+  padding: 12px 25px;
+  background: #f8f9fa;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.bike-categories a:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.search-info {
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.bikes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.bike-item {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.bike-item:hover {
+  transform: translateY(-10px);
+}
+
+.bike-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.bike-item h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.bike-type {
+  color: #666;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.bike-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 35px;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #764ba2;
+}
+
+.nested-content {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 2px solid #f0f0f0;
+}
+
+/* Dark Theme */
+.bikes-container.dark .bike-item {
+  background: #2d2d44;
+}
+
+.bikes-container.dark .bike-item h3 {
+  color: #f0f0f0;
+}
+
+.bikes-container.dark .bike-item p {
+  color: #ccc;
+}
+
+.bikes-container.dark .bike-categories a {
+  background: #2d2d44;
+  color: #f0f0f0;
+}
+
+.bikes-container.dark .bike-categories a:hover {
+  background: #667eea;
+}
+
+.bikes-container.dark .search-info {
+  background: #2d2d44;
+  color: #f0f0f0;
+}
+
+.bikes-container.dark h1 {
+  color: #f0f0f0;
+}
+
+.bikes-container.dark .nested-content {
+  border-color: #3d3d5c;
+}
+
+@media (max-width: 768px) {
+  .bike-categories {
+    gap: 10px;
+  }
+  
+  .bike-categories a {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,199 @@
+.booking-container {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.booking-bike-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.booking-bike-info .bike-icon {
+  font-size: 3rem;
+}
+
+.booking-bike-info h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.booking-bike-info p {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.booking-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group input.error-input,
+.form-group textarea.error-input {
+  border-color: #ff6b6b;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.booking-success {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-success h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.booking-success button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.booking-success button:hover {
+  background: #764ba2;
+}
+
+.booking-details-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Dark Theme */
+.booking-container.dark .booking-bike-info,
+.booking-container.dark .booking-form {
+  background: #2d2d44;
+}
+
+.booking-container.dark .booking-bike-info h3,
+.booking-container.dark .form-group label {
+  color: #f0f0f0;
+}
+
+.booking-container.dark .booking-bike-info p {
+  color: #667eea;
+}
+
+.booking-container.dark .form-group input,
+.booking-container.dark .form-group textarea {
+  background: #3d3d5c;
+  border-color: #4d4d6c;
+  color: #f0f0f0;
+}
+
+.booking-container.dark .form-group input:focus,
+.booking-container.dark .form-group textarea:focus {
+  border-color: #667eea;
+}
+
+.booking-container.dark h1 {
+  color: #f0f0f0;
+}
+
+.booking-container.dark .booking-success {
+  background: #1a1a2e;
+}
+
+.booking-container.dark .booking-details-summary {
+  background: #2d2d44;
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-form {
+    padding: 20px;
+  }
+}

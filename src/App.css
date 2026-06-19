@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f9fa;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Dark Theme Styles */
+.app-container.dark {
+  background: #1a1a2e;
+  color: #f0f0f0;
+}
+
+.app-container.dark .home-container,
+.app-container.dark .about-container,
+.app-container.dark .bikes-container,
+.app-container.dark .booking-container,
+.app-container.dark .contact-container,
+.app-container.dark .admin-container {
+  background: #1a1a2e;
+  color: #f0f0f0;
+}
+
+.app-container.dark .bike-card,
+.app-container.dark .feature-item,
+.app-container.dark .content-card,
+.app-container.dark .team-card,
+.app-container.dark .testimonial-card,
+.app-container.dark .admin-form,
+.app-container.dark .admin-list,
+.app-container.dark .booking-form {
+  background: #2d2d44;
+  color: #f0f0f0;
+}
+
+.app-container.dark .bike-card h3,
+.app-container.dark .feature-item h3,
+.app-container.dark .team-card h3 {
+  color: #f0f0f0;
+}
+
+.app-container.dark .bike-card p,
+.app-container.dark .feature-item p,
+.app-container.dark .team-card p {
+  color: #ccc;
+}
+
+.app-container.dark .content-card ul li {
+  background: #3d3d5c;
+  color: #f0f0f0;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}

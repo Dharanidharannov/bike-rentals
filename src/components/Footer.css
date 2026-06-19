@@ -1,0 +1,38 @@
+.Footer {
+  background: #2d3436;
+  color: white;
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.Footer img {
+  height: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.Footer p {
+  margin: 8px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.Footer p:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer {
+    grid-template-columns: 1fr;
+  }
+}
