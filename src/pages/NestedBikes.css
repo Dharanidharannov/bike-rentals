@@ -81,7 +81,7 @@
 }
 
 /* Dark Theme */
-.nested-bikes.dark .bike-item {
+.nested-bikes.dark>.bike-item {
   background: #2d2d44;
 }
 

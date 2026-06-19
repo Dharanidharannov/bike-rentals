@@ -1,19 +1,7 @@
 {
   "bikes": [
     {
-      "id": 1,
-      "name": "Mountain Explorer",
-      "type": "mountain",
-      "price": 500,
-      "image": "🚵",
-      "available": true,
-      "rating": 4.8,
-      "reviews": 156,
-      "description": "Perfect for off-road adventures.",
-      "features": ["Full suspension", "Disc brakes", "All-terrain tires"]
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "City Cruiser",
       "type": "city",
       "price": 350,
@@ -22,22 +10,30 @@
       "rating": 4.5,
       "reviews": 98,
       "description": "Comfortable and stylish city bike.",
-      "features": ["Comfort saddle", "Easy gears", "Carrier rack"]
+      "features": [
+        "Comfort saddle",
+        "Easy gears",
+        "Carrier rack"
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Speed Racer",
       "type": "sports",
       "price": 750,
       "image": "🏍️",
-      "available": false,
+      "available": true,
       "rating": 4.9,
       "reviews": 203,
       "description": "High-performance sports bike.",
-      "features": ["Carbon frame", "Aerodynamic", "Performance tires"]
+      "features": [
+        "Carbon frame",
+        "Aerodynamic",
+        "Performance tires"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Electric Rider",
       "type": "electric",
       "price": 900,
@@ -46,10 +42,14 @@
       "rating": 4.7,
       "reviews": 178,
       "description": "Eco-friendly electric bike.",
-      "features": ["Motor assist", "Long battery", "LED display"]
+      "features": [
+        "Motor assist",
+        "Long battery",
+        "LED display"
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Retro Classic",
       "type": "city",
       "price": 400,
@@ -58,8 +58,21 @@
       "rating": 4.6,
       "reviews": 67,
       "description": "Vintage style modern comfort.",
-      "features": ["Vintage design", "Leather saddle", "Classic bell"]
+      "features": [
+        "Vintage design",
+        "Leather saddle",
+        "Classic bell"
+      ]
+    },
+    {
+      "name": "r15",
+      "type": "sports",
+      "price": 125,
+      "image": "🏍️",
+      "available": true,
+      "id": "YPatNmNKUx8"
     }
   ],
-  "bookings": []
+  "bookings": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

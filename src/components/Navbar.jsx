@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { theme, toggleTheme, cart } = useContext(AppContext);
+  const { theme, toggleTheme } = useContext(AppContext);
 
   const closeMenu = () => {
     setMenuOpen(false);
